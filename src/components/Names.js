@@ -70,11 +70,11 @@ const Names = ({ addNames }) => {
             </span>
           </div>
         </div>
-        {nextButton}
-        <Link to="/">
-          <button>Back</button>
-        </Link>
       </form>
+      {nextButton}
+      <Link to="/">
+        <button>Back</button>
+      </Link>
     </div>
   );
 };
