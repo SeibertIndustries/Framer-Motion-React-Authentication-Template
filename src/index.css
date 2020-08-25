@@ -1,13 +1,151 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* fonts */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/Quicksand-Light.woff2') format('woff2'),
+      url('/Quicksand-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* reset & common styles */
+body, ul, h1, h2, h3, p, button, a, div {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Quicksand';
+  letter-spacing: 2px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background: rgb(2,30,200);
+  background: radial-gradient(circle, rgba(2,30,200,1) 0%, rgba(5,59,233,1) 100%);
+  overflow: hidden;
+}
+
+button {
+  color: #ffffff;
+  padding: 10px 30px;
+  font-size: 1rem;
+  background: transparent;
+  margin: 40px auto;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 50px;
+  border: 0px solid white;
+  border-radius: 50px;
+  border: 1px solid white;
+}
+
+button:hover {
+  background: #ffffff;
+  color: #053be9;
+  opacity: 0.85;
+}
+
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+}
+
+.container h3,
+.container h4 {
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* header */
+header {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+}
+
+header .title {
+  flex-grow: 1;
+  margin-left: 20px;
+  font-size: 0.6em;
+}
+ 
+header h1 {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 10px;
+}
+
+header .pizza-svg {
+  width: 80px;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+/* lists */
+li span.active{
+  font-weight: bold;
+}
+li span.active::before{
+  content: '>';
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+  transform: scale(0.8, 1);
+  display: inline-block;
+}
+
+/* pages */
+.home h2{
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+.home.container, 
+.order.container{
+  text-align: center;
+  max-width: 800px;
+}
+.home button{
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.6em;
+  border: 3px solid white;
+  margin: 30px 20px;
+}
+.order p{
+  margin: 20px auto;
+}
+
+
+.input-field label {
+  color: #ffffff;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #ffffff;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
+
+.input-field .prefix.active {
+  color: #ffffff;
 }
