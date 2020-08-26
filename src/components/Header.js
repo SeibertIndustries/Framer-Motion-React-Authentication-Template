@@ -1,14 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const Header = () => {
   return (
     <header>
       <div className="logo">
-        <svg
-          width="50px"
-          height="33px"
-          viewBox="0 0 50 33"
-        >
+        <svg width="50px" height="33px" viewBox="0 0 50 33">
           <title>Seibert Industries Logo</title>
           <g
             id="Page-1"
@@ -29,6 +25,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

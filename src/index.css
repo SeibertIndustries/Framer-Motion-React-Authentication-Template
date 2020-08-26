@@ -31,17 +31,14 @@ button {
   background: transparent;
   margin: 40px auto;
   cursor: pointer;
-  opacity: 0.9;
   border-radius: 50px;
-  border: 0px solid white;
+  border: 1px solid white;
   border-radius: 50px;
   border: 1px solid white;
 }
 
-button:hover {
-  background: #ffffff;
-  color: #053be9;
-  opacity: 0.85;
+.next-button {
+  margin-right: 1rem;
 }
 
 .container {
@@ -79,15 +76,6 @@ header h1 {
   padding-bottom: 10px;
 }
 
-header .pizza-svg {
-  width: 80px;
-  overflow: visible;
-  stroke: #fff;
-  stroke-width: 4;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
 /* lists */
 li span.active{
   font-weight: bold;
@@ -103,23 +91,19 @@ li span.active::before{
 
 /* pages */
 .home h2{
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 30px;
 }
-.home.container, 
-.order.container{
+.home.container {
   text-align: center;
   max-width: 800px;
 }
-.home button{
+.home button {
   color: white;
   padding: 15px 30px;
-  font-size: 1.6em;
-  border: 3px solid white;
+  font-size: 1.3rem;
+  border: 1.5px solid white;
   margin: 30px 20px;
-}
-.order p{
-  margin: 20px auto;
 }
 
 
