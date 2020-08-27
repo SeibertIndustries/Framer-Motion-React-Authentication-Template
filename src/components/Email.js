@@ -82,7 +82,7 @@ const Email = ({ addEmail, user }) => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2, duration: 0.7 }}
           >
-            In case you become famous
+            We promise not to send you spam.
           </motion.span>
         </motion.div>
         {nextButton}
