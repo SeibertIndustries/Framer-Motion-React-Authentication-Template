@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "materialize-css";
 import { motion } from "framer-motion"; 
 
-const Names = ({ addPassword, user }) => {
+const Password = ({ addPassword, user }) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -118,4 +118,4 @@ const Names = ({ addPassword, user }) => {
   );
 };
 
-export default Names;
+export default Password;

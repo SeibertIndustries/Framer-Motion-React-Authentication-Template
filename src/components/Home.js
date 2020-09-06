@@ -9,7 +9,6 @@ const Home = () => {
       <Link to="/name-setup">
         <motion.button
           whileHover={{
-            scale: 1.005,
             boxShadow: "0px 0px 2px rgb(255,255,255)",
           }}
           whileTap={{
